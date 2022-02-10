@@ -2,13 +2,12 @@
   document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('getMessage').onclick = function(){
       // Add your code below this line
-      var req = new XMLHttpRequest();
-      req.open('GET', 'https://reqres.in/api/users', true);
-      req.send();
-      req.onload = function(){
-        var json=JSON.parse(req.responseText);
-        document.getElementsByClassName('message')[0].innerHTML = JSON.stringify(json)
+      let counter = 1;
+      while (counter <= 10) {
+          console.log(counter);
+          counter++;
       }
+    }
       // Add your code above this line
     };
   });
